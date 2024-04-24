@@ -92,3 +92,13 @@
   color: var(--dark-grayish-blue);
   letter-spacing: 1.5px;
 }
+
+@media screen and (max-width: 425px) {
+  .card {
+    width: 326px;
+  }
+
+  .stats {
+    padding: 24px 52px 24px 41px;
+  }
+}

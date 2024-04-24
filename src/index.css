@@ -21,13 +21,25 @@ html,
 body {
   width: 100%;
   max-width: 1440px;
-  min-height: 720px;
+  height: 720px;
 }
 
 body {
-  background: url("/bg-top.png") top left no-repeat,
-    url("/bg-bottom.png") bottom right no-repeat, var(--dark-cyan);
+  background: url("/bg-desktop-top.png") top left no-repeat,
+    url("/bg-desktop-bottom.png") bottom right no-repeat, var(--dark-cyan);
   font-family: "Kumbh Sans", sans-serif;
   display: grid;
   place-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  html,
+  body {
+    height: 667px;
+  }
+
+  body {
+    background: url("/bg-mobile-top.png") top left no-repeat,
+      url("/bg-mobile-bottom.png") bottom right no-repeat, var(--dark-cyan);
+  }
 }
