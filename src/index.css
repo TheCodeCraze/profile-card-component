@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 18px;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 720px;
+}
+
+body {
+  background: url("/bg-top.png") top left no-repeat,
+    url("/bg-bottom.png") bottom right no-repeat, var(--dark-cyan);
+  font-family: "Kumbh Sans", sans-serif;
+  display: grid;
+  place-items: center;
+}
