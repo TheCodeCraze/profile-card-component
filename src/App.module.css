@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 15px;
+  box-shadow: hsla(197, 84%, 20%, 0.5048) 0 50px 100px -20px;
 }
 
 .image {
